@@ -15,7 +15,7 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 
 		// String path, but no compile time safety.
-		CounterBtn.Bind(Button.TextProperty, "Nested.NestedCount");
+		CounterBtn.Bind(Button.TextProperty, "NestedObject.NestedCount");
 
 		// Compile time safety, but high barrier of entry for nested handlers.
 		CounterBtn.Bind(
