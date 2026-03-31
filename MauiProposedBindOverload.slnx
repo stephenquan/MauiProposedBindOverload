@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="MauiProposedBindOverload/MauiProposedBindOverload.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+</Solution>
