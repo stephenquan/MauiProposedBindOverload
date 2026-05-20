@@ -13,4 +13,12 @@ static class ProposedBindableObjectExtensions
 		bindable.SetBinding(targetProperty, binding);
 		return bindable;
 	}
+
+	public static TBindable Bind<TBindable>(
+		this TBindable bindable,
+		BindingBase binding)
+		where TBindable : InputView
+	{
+		return Bind(bindable, InputView.TextProperty, binding);
+	}
 }

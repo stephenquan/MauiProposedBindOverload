@@ -11,5 +11,5 @@ public partial class ViewModel
 
 public partial class NestedViewModel : ObservableObject
 {
-	[ObservableProperty] public partial int NestedCount { get; set; } = 0;
+	[ObservableProperty] public partial string? Text { get; set; }
 }
