@@ -32,7 +32,7 @@ public partial class MainPage : ContentPage
 
 		// Proposed new API overload, with support for nested properties.
 		// See ProposedBindableObjectExtensions.cs for the Bind extension method.
-		var entry3 = new Entry().Bind(Entry.TextProperty, BindingBase.Create(static (ViewModel vm) => vm.NestedObject.Text, BindingMode.TwoWay));
+		var entry3 = new Entry().Bind(Entry.TextProperty, BindingBase.Create(static (ViewModel vm) => vm.NestedObject.Text));
 
 		// Add the entries to the page for demonstration.
 		vsl.Children.Add(new Label { Text = "Entry with string path:" });
